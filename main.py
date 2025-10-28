@@ -64,3 +64,5 @@ def generate_company() -> Company:
     # Generate the rest of the company information
 
     return True
+
+print(my_company)

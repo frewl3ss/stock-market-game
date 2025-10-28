@@ -82,7 +82,7 @@ class Company:
         self.capacity = capacity
         self.efficiency = self.calculate_efficiency(outputs, capacity)
         self.inventory = inventory
-        self.status = self.set_status(self.efficiency)
+        self.status = self.get_status(self.efficiency)
 
         # Finances
         self.cash = cash
@@ -177,15 +177,15 @@ class Company:
         
         return total_output / total_capacity * 100
 
-    def set_status(self, efficiency: float) -> str:
+    def get_status(self, efficiency: float) -> str:
         """
-        Sets the status of a company based on its current effiency.
+        Gets the status of a company based on its current effiency.
 
         Args:
-            - efficiency (float): % of maximum possible output actually being produced. 100% during normal operations.
+            efficiency (float): % of maximum possible output actually being produced. 100% during normal operations.
         
         Returns:
-            - Either an "Operational", "Limited" or "Idle" status
+            Either an "Operational", "Limited" or "Idle" status
         """
         if efficiency >= 0.9:
             return "Operational"
@@ -193,5 +193,3 @@ class Company:
             return "Limited"
         else:
             return "Idle"
-
-# Testing version control
