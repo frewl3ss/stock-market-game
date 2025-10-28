@@ -2,8 +2,10 @@
 from city import City
 from company import Company
 from registry import Registry
+from world_map import Map
 
 registry = Registry()
+world_map = Map()
 
 my_city = City(0,
                "London",
