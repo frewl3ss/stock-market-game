@@ -5,7 +5,7 @@ class Registry:
 
     Attributes:
         - registry (dict[str, tuple[str, int]]): Contains a reference for all companies in the simulation. Stored as {company_id: (name, ticker)}.
-        - next_company_id: Holds the next available ID to give out. Does not backtrack when a company goes bust.
+        - next_company_id: Holds the next available ID to give out. Does not backtrack when a company goes bust. Starts at 1.
     """
 
     def __init__(self):

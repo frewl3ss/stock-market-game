@@ -124,36 +124,36 @@ class Map:
             self.add_connection(50, 9, distance=1389, route_type='land'),  # Santiago <-> Buenos Aires
             self.add_connection(52, 46, distance=433, route_type='land'),  # São Paulo <-> Rio de Janeiro
             self.add_connection(2, 17, distance=2375, route_type='land'),  # Addis Ababa <-> Dar es Salaam
-            self.add_connection(16, 32, distance=2715, route_type='land'),  # Conakry <-> Lagos
+            self.add_connection(16, 31, distance=2715, route_type='land'),  # Conakry <-> Lagos
             self.add_connection(26, 11, distance=1398, route_type='land'),  # Johannesburg <-> Cape Town
             self.add_connection(26, 17, distance=3516, route_type='land'),  # Johannesburg <-> Dar es Salaam
             self.add_connection(27, 2, distance=5080, route_type='land'),  # Kinshasa <-> Addis Ababa
             self.add_connection(27, 17, distance=4099, route_type='land'),  # Kinshasa <-> Dar es Salaam
             self.add_connection(27, 36, distance=808, route_type='land'),  # Kinshasa <-> Luanda
-            self.add_connection(32, 2, distance=5363, route_type='land'),  # Lagos <-> Addis Ababa
-            self.add_connection(32, 27, distance=2937, route_type='land'),  # Lagos <-> Kinshasa
-            self.add_connection(36, 26, distance=3179, route_type='land'),  # Abu Dhabi <-> Kuwait City
+            self.add_connection(31, 2, distance=5363, route_type='land'),  # Lagos <-> Addis Ababa
+            self.add_connection(31, 27, distance=2937, route_type='land'),  # Lagos <-> Kinshasa
+            self.add_connection(1, 29, distance=3179, route_type='land'),  # Abu Dhabi <-> Kuwait City
             self.add_connection(3, 29, distance=4935, route_type='land'),  # Astana <-> Kuwait City
-            self.add_connection(3, 33, distance=3541, route_type='land'),  # Astana <-> Lahore
+            self.add_connection(3, 32, distance=3541, route_type='land'),  # Astana <-> Lahore
             self.add_connection(6, 3, distance=3700, route_type='land'),  # Baotou <-> Astana
             self.add_connection(8, 6, distance=663, route_type='land'),  # Beijing <-> Baotou
-            self.add_connection(8, 55, distance=1213, route_type='land'),  # Beijing <-> Shanghai
+            self.add_connection(8, 54, distance=1213, route_type='land'),  # Beijing <-> Shanghai
             self.add_connection(10, 29, distance=2060, route_type='land'),  # Cairo <-> Kuwait City
             self.add_connection(18, 21, distance=3225, route_type='land'),  # Dhaka <-> Ho Chi Minh City
-            self.add_connection(18, 56, distance=4540, route_type='land'),  # Dhaka <-> Shenzhen
+            self.add_connection(18, 55, distance=4540, route_type='land'),  # Dhaka <-> Shenzhen
             self.add_connection(23, 10, distance=2481, route_type='land'),  # Istanbul <-> Cairo
             self.add_connection(25, 1, distance=1844, route_type='land'),  # Jeddah <-> Abu Dhabi
             self.add_connection(28, 18, distance=330, route_type='land'),  # Kolkata <-> Dhaka
-            self.add_connection(28, 33, distance=2150, route_type='land'),  # Kolkata <-> Lahore
+            self.add_connection(28, 32, distance=2150, route_type='land'),  # Kolkata <-> Lahore
             self.add_connection(29, 25, distance=1530, route_type='land'),  # Kuwait City <-> Jeddah
-            self.add_connection(33, 42, distance=1950, route_type='land'),  # Lahore <-> Mumbai
+            self.add_connection(32, 41, distance=1950, route_type='land'),  # Lahore <-> Mumbai
             self.add_connection(40, 3, distance=2704, route_type='land'),  # Moscow <-> Astana
-            self.add_connection(42, 28, distance=1901, route_type='land'),  # Mumbai <-> Kolkata
-            self.add_connection(55, 6, distance=1868, route_type='land'),  # Shanghai <-> Baotou
-            self.add_connection(56, 6, distance=2614, route_type='land'),  # Shenzhen <-> Baotou
-            self.add_connection(56, 8, distance=2180, route_type='land'),  # Shenzhen <-> Beijing
-            self.add_connection(56, 55, distance=1508, route_type='land'),  # Shenzhen <-> Shanghai
-            self.add_connection(60, 54, distance=1200, route_type='land'),  # Vladivostok <-> Seoul
+            self.add_connection(41, 28, distance=1901, route_type='land'),  # Mumbai <-> Kolkata
+            self.add_connection(54, 6, distance=1868, route_type='land'),  # Shanghai <-> Baotou
+            self.add_connection(55, 6, distance=2614, route_type='land'),  # Shenzhen <-> Baotou
+            self.add_connection(55, 8, distance=2180, route_type='land'),  # Shenzhen <-> Beijing
+            self.add_connection(55, 54, distance=1508, route_type='land'),  # Shenzhen <-> Shanghai
+            self.add_connection(60, 53, distance=1200, route_type='land'),  # Vladivostok <-> Seoul
             self.add_connection(4, 30, distance=2145, route_type='land'),  # Athens <-> Kyiv
             self.add_connection(7, 43, distance=1035, route_type='land'),  # Barcelona <-> Paris
             self.add_connection(19, 7, distance=1800, route_type='land'),  # Hamburg <-> Barcelona
@@ -174,9 +174,82 @@ class Map:
             self.add_connection(59, 7, distance=1987, route_type='land'),  # Vienna <-> Barcelona
             self.add_connection(59, 19, distance=973, route_type='land'),  # Vienna <-> Hamburg
             self.add_connection(59, 23, distance=1560, route_type='land'),  # Vienna <-> Istanbul
+            self.add_connection(4, 10, distance=0, route_type='sea'),   # Athens <-> Cairo
+            self.add_connection(4, 23, distance=0, route_type='sea'),   # Athens <-> Istanbul
+            self.add_connection(5, 45, distance=0, route_type='sea'),   # Auckland <-> Port Moresby
+            self.add_connection(7, 47, distance=0, route_type='sea'),   # Barcelona <-> Rome
+            self.add_connection(10, 25, distance=0, route_type='sea'),  # Cairo <-> Jeddah
+            self.add_connection(11, 24, distance=0, route_type='sea'),  # Cape Town <-> Jakarta
+            self.add_connection(11, 44, distance=0, route_type='sea'),  # Cape Town <-> Perth
+            self.add_connection(12, 16, distance=0, route_type='sea'),  # Caracas <-> Conakry
+            self.add_connection(12, 36, distance=0, route_type='sea'),  # Caracas <-> Luanda
+            self.add_connection(13, 7, distance=0, route_type='sea'),   # Casablanca <-> Barcelona
+            self.add_connection(13, 16, distance=0, route_type='sea'),  # Casablanca <-> Conakry
+            self.add_connection(13, 48, distance=0, route_type='sea'),  # Casablanca <-> Rotterdam
+            self.add_connection(15, 28, distance=0, route_type='sea'),  # Colombo <-> Kolkata
+            self.add_connection(15, 41, distance=0, route_type='sea'),  # Colombo <-> Mumbai
+            self.add_connection(17, 15, distance=0, route_type='sea'),  # Dar es Salaam <-> Colombo
+            self.add_connection(17, 24, distance=0, route_type='sea'),  # Dar es Salaam <-> Jakarta
+            self.add_connection(17, 41, distance=0, route_type='sea'),  # Dar es Salaam <-> Mumbai
+            self.add_connection(17, 44, distance=0, route_type='sea'),  # Dar es Salaam <-> Perth
+            self.add_connection(20, 51, distance=0, route_type='sea'),  # Havana <-> Santo Domingo
+            self.add_connection(21, 37, distance=0, route_type='sea'),  # Ho Chi Minh City <-> Manila
+            self.add_connection(22, 20, distance=0, route_type='sea'),  # Houston <-> Havana
+            self.add_connection(24, 15, distance=0, route_type='sea'),  # Jakarta <-> Colombo
+            self.add_connection(24, 37, distance=0, route_type='sea'),  # Jakarta <-> Manila
+            self.add_connection(24, 45, distance=0, route_type='sea'),  # Jakarta <-> Port Moresby
+            self.add_connection(24, 56, distance=0, route_type='sea'),  # Jakarta <-> Singapore
+            self.add_connection(25, 15, distance=0, route_type='sea'),  # Jeddah <-> Colombo
+            self.add_connection(25, 17, distance=0, route_type='sea'),  # Jeddah <-> Dar es Salaam
+            self.add_connection(25, 41, distance=0, route_type='sea'),  # Jeddah <-> Mumbai
+            self.add_connection(33, 5, distance=0, route_type='sea'),   # Lima <-> Auckland
+            self.add_connection(33, 20, distance=0, route_type='sea'),  # Lima <-> Havana
+            self.add_connection(33, 50, distance=0, route_type='sea'),  # Lima <-> Santiago
+            self.add_connection(33, 51, distance=0, route_type='sea'),  # Lima <-> Santo Domingo
+            self.add_connection(34, 19, distance=0, route_type='sea'),  # London <-> Hamburg
+            self.add_connection(34, 48, distance=0, route_type='sea'),  # London <-> Rotterdam
+            self.add_connection(35, 33, distance=0, route_type='sea'),  # Los Angeles <-> Lima
+            self.add_connection(37, 45, distance=0, route_type='sea'),  # Manila <-> Port Moresby
+            self.add_connection(37, 54, distance=0, route_type='sea'),  # Manila <-> Shanghai
+            self.add_connection(37, 55, distance=0, route_type='sea'),  # Manila <-> Shenzhen
+            self.add_connection(37, 57, distance=0, route_type='sea'),  # Manila <-> Tokyo
+            self.add_connection(38, 20, distance=0, route_type='sea'),  # Mexico City <-> Havana
+            self.add_connection(41, 1, distance=0, route_type='sea'),   # Mumbai <-> Abu Dhabi
+            self.add_connection(41, 29, distance=0, route_type='sea'),  # Mumbai <-> Kuwait City
+            self.add_connection(42, 13, distance=0, route_type='sea'),  # New York City <-> Casablanca
+            self.add_connection(42, 16, distance=0, route_type='sea'),  # New York City <-> Conakry
+            self.add_connection(42, 20, distance=0, route_type='sea'),  # New York City <-> Havana
+            self.add_connection(42, 34, distance=0, route_type='sea'),  # New York City <-> London
+            self.add_connection(42, 48, distance=0, route_type='sea'),  # New York City <-> Rotterdam
+            self.add_connection(42, 51, distance=0, route_type='sea'),  # New York City <-> Santo Domingo
+            self.add_connection(44, 5, distance=0, route_type='sea'),   # Perth <-> Auckland
+            self.add_connection(44, 24, distance=0, route_type='sea'),  # Perth <-> Jakarta
+            self.add_connection(44, 45, distance=0, route_type='sea'),  # Perth <-> Port Moresby
+            self.add_connection(46, 11, distance=0, route_type='sea'),  # Rio de Janeiro <-> Cape Town
+            self.add_connection(46, 16, distance=0, route_type='sea'),  # Rio de Janeiro <-> Conakry
+            self.add_connection(46, 36, distance=0, route_type='sea'),  # Rio de Janeiro <-> Luanda
+            self.add_connection(47, 4, distance=0, route_type='sea'),   # Rome <-> Athens
+            self.add_connection(49, 19, distance=0, route_type='sea'),  # Saint Petersburg <-> Hamburg
+            self.add_connection(49, 34, distance=0, route_type='sea'),  # Saint Petersburg <-> London
+            self.add_connection(49, 48, distance=0, route_type='sea'),  # Saint Petersburg <-> Rotterdam
+            self.add_connection(51, 12, distance=0, route_type='sea'),  # Santo Domingo <-> Caracas
+            self.add_connection(51, 13, distance=0, route_type='sea'),  # Santo Domingo <-> Casablanca
+            self.add_connection(53, 8, distance=0, route_type='sea'),  # Seoul <-> Beijing
+            self.add_connection(53, 54, distance=0, route_type='sea'),  # Seoul <-> Shanghai
+            self.add_connection(55, 57, distance=0, route_type='sea'),  # Shenzhen <-> Tokyo
+            self.add_connection(56, 15, distance=0, route_type='sea'),  # Singapore <-> Colombo
+            self.add_connection(56, 28, distance=0, route_type='sea'),  # Singapore <-> Kolkata
+            self.add_connection(56, 37, distance=0, route_type='sea'),  # Singapore <-> Manila
+            self.add_connection(57, 35, distance=0, route_type='sea'),  # Tokyo <-> Los Angeles
+            self.add_connection(57, 53, distance=0, route_type='sea'),  # Tokyo <-> Seoul
+            self.add_connection(57, 54, distance=0, route_type='sea'),  # Tokyo <-> Shanghai
+            self.add_connection(57, 58, distance=0, route_type='sea'),  # Tokyo <-> Vancouver
+            self.add_connection(57, 60, distance=0, route_type='sea'),  # Tokyo <-> Vladivostok
             ]
 
 if __name__ == "__main__":
+    m = Map()
+
     plt.figure(figsize=(18, 12))
     pos = nx.spring_layout(m.graph, seed=42, k=0.4)
 
